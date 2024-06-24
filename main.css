@@ -1,0 +1,43 @@
+
+.flores {
+    display: grid;
+    grid-template-columns: repeat(3, 32.6%);
+    column-gap: 1%;
+    list-style: none;
+    padding-left: 0;
+}
+
+.card img {
+    max-height: 275px;
+}
+
+/* TABLET */
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+    section .container {
+        display: block;
+    }
+
+    .flores {
+        display: grid;
+        grid-template-columns: repeat(2, 49.5%);
+        column-gap: 1%;
+        row-gap: 5%;
+    }
+
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 640px) {
+
+    section .container {
+        display: block;
+    }
+
+    .flores {
+        display: block;
+    }
+
+}
